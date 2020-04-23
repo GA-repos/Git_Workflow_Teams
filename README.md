@@ -44,7 +44,6 @@ If you're feeling fuzzy on these topics, here's some reading to brush up.
 **Note: The setup for this lesson is not the same as other repos.**
 
 1. Fork and clone this repository.
- [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
 1. Run `git checkout solution` so the solution branch is available for a rebase lab.
 1. Run `git checkout master`.
 
@@ -146,7 +145,7 @@ fact they have never been easier to manage. Let's take a look at one together.
       `git rebase --continue | --skip | --abort | --quit | --edit-todo`
       (view more info on these using `git rebase --help`)
 
-### Discussion: The GA Team Project Workflow
+### Discussion: The Team Project Workflow
 
 Though there are a lot of different potential Git workflows for teams, for your
 team project, we will require you to use the following workflow.
@@ -161,13 +160,8 @@ team project, we will require you to use the following workflow.
    organization. Make sure you create the organization on GitHub and not GitHub
    Enterprise.
 
-1. Create two empty starting repos within the new GitHub organization (one for
-   your Client and one for your API). One team member should download the .zip
-   of
-   [`browser-template`](https://git.generalassemb.ly/ga-wdi-boston/browser-template)
-   and
-   [`express-api-template`](https://git.generalassemb.ly/ga-wdi-boston/express-api-template)
-   as separate local repos. Follow the set up instructions for each template.
+1. Create an empty starting repo within the new GitHub organization. If you're
+   working on an existing repo (such as for homework), fork it into your organization.
 
 1. Using `git remote add origin <your-ssh-git-url>` attach your two empty GitHub
    repos to the corresponding ones on your local computer (`browser-template`
@@ -259,12 +253,6 @@ Work through the following steps as a team.
 
 1. Deploy!
 
-    _If this is your back-end repo,_
-    _run `heroku create` to set up a new repo on Heroku,_
-    _and push to it by running `git push heroku master`._
-    _If this is your front-end repo, test your build with `grunt build`,_
-    _then run `grunt deploy`_
-
 ##### GENERAL GUIDELINES
 
 - **Always** branch by feature. Each branch should have a feature in mind, i.e.
@@ -329,22 +317,6 @@ These images may help you understand and remember the procedure described above:
 _Run through these exercises and discuss insights among
 your squads._
 
-### Lab: Using the GA Team Project Workflow
-
-To practice the workflow we've prescribed for you, your team will now follow it
-to create a simple front-end app that (in response to a button-click) uses AJAX
-to GET data from
-[this API endpoint](https://wdi-library-api.herokuapp.com/books),
-and then renders the resultant data nicely in the page using Handlebars.
-
-You may start by downloading the
-[Browser-Template](https://git.generalassemb.ly/ga-wdi-boston/browser-template)
- as a ZIP and renaming and moving those files into your repo. Your feature
- branches should be `html-css`, `ajax`, `handlebars`, and `ui-behavior`.
-
-**You need to follow the above steps or you _will_ lose hidden files.**
-
-Make commits regularly, in case you need to undo a mistake!
 
 ## Additional Resources
 
