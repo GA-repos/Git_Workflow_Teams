@@ -96,10 +96,10 @@ _Remember: when you "rebase your code on top of things" the branch following
 `git rebase` is what you're rebasing your branch "on top of" — it will be the
 new "base" for your current branch if executed._
 
-Note that we've configured your Git installations to automatically rebase when
+Note that you can configure your Git installation to automatically rebase when
 you run `git pull` -- normally, pulling from a remote creates a merge commit.
-This allows you to stay up to date with a remote without littering your commit
-history with merges. If you didn't have Git set up that way, you'd have to run
+Configuring Git for a rebase allows you to stay up to date with a remote without littering
+your commit history with merges. If you don't have Git set up that way, you have to run
 `git pull --rebase` to get the same behavior (more on this configuration option [here](http://gitready.com/advanced/2009/02/11/pull-with-rebase.html)).
 
 Whew, that was a lot! Let's recap.
@@ -122,17 +122,17 @@ fact they have never been easier to manage. Let's take a look at one together.
       `git rebase solution` solution
     - Uh-oh, looks like there was already a file with that name on the solution
       branch and git doesn't know which file to use. Let's take a look at the
-      file in Atom.
+      file in VS Code.
 1. Review the merge conflict
     - Notice the file shows you what text is different, which version of the
       file the text comes from, and also provides you with an easy interface to
       choose which text you want.
     - Git places merge markers in the file to define where one version of a file
       starts and ends, and where the other conflicting version starts and ends.
-      Luckily, Atom abstracts away the complexity of dealing with merge markers.
+      Luckily, VS Code abstracts away the complexity of dealing with merge markers.
       We just need to choose using a nice GUI button which version to use.
 1. Complete the merge
-    - Let's pick the text we want in Atom.
+    - Let's pick the text we want in VS Code.
     - Now head back to the terminal.
     - Notice the terminal is giving us some tips on what we should do next:
     - We need to add the change (`git add conflict.md`) and then following the
