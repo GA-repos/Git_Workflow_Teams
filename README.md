@@ -160,12 +160,12 @@ team project, we will require you to use the following workflow.
    organization. Make sure you create the organization on GitHub and not GitHub
    Enterprise.
 
-1. Create an empty starting repo within the new GitHub organization. If you're
-   working on an existing repo (such as for homework), fork it into your organization.
+1. Create an empty starting repo within the new GitHub organization. (If you were
+   working on an existing repo such as for homework, you'd fork it).
 
-1. Using `git remote add origin <your-ssh-git-url>` attach your two empty GitHub
-   repos to the corresponding ones on your local computer (`browser-template`
-   for your client repo, `express-api-template` for your API).
+1. Using `git remote add origin <your-ssh-git-url>` attach your two GitHub
+   repos to the corresponding ones on your local computer (one for React containing your 
+   front end app and another for Express containing your API server).
 
 1. Create a `development` branch in each repo and push them up to the remotes
    on GitHub.
