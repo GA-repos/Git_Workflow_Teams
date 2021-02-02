@@ -207,6 +207,18 @@ Work through the following steps as a team.
 
 1. Deploy!
 
+### Git Log Aesthetic
+
+Terse, not neccesarily complete sentences.
+
+![alt](./imgs/aesthetic.JPG)
+
+### That'll Fix it!
+
+The least elegant way, but will get you out of a jam.
+
+![alt](./imgs/xkcd.png)
+
 ### Project Workflow Visual Recap
 
 These images may help you understand and remember the procedure described above:
